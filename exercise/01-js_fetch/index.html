@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TV Maze API Search</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <form id="search">
+        <!-- for this lesson we will ignore the action part
+          It is the server address where the form is sending data -->
+        <input
+          type="search"
+          placeholder="Search for a title..."
+          id="show-search"
+        />
+
+        <input type="submit" value="Submit" />
+      </form>
+
+      <select id="show-select">
+        <option value="">Select a show...</option>
+      </select>
+
+      <div class="browse">
+        <div id="shows-list"></div>
+        <div id="show-details"></div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
